@@ -9,13 +9,13 @@ while True:
     data = mysock.recv(512)
     if len(data) < 1:
         break
-    print(data.decode(),end='')
+    print(data.decode())
 mysock.close()
 
+# ---------------------------------------------- #
 # Below is the output of the code --
 
 '''
-/Users/rohitkumar.roy/Documents/PycharmProjects/pythonProject/venv/bin/python /Users/rohitkumar.roy/Documents/PycharmProjects/pythonProject/SimpleWebBrowser.py
 HTTP/1.1 200 OK
 Date: Sun, 15 Aug 2021 12:31:06 GMT
 Server: Apache/2.4.18 (Ubuntu)
@@ -33,7 +33,5 @@ But soft what light through yonder window breaks
 It is the east and Juliet is the sun
 Arise fair sun and kill the envious moon
 Who is already sick and pale with grief
-
-Process finished with exit code 0
 
 '''
